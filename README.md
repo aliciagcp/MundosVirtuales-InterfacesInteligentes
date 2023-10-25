@@ -35,6 +35,11 @@ transform.rotation = Quaternion.Euler(0f, 90f, 0f); // Establece la rotación a 
 ```
   + Escalados
 
+**transform.localScale**: Permite acceder y modificar directamente la escala del objeto en cada eje (X, Y, Z).
+```C
+transform.localScale = new Vector3(2f, 2f, 2f); // Duplica el tamaño del objeto en todo
+```
+
 2. **Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado**
 
 No se obtendría el mismo resultado, ya que las transformaciones no son conmutativas.
