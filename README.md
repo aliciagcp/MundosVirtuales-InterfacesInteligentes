@@ -1,4 +1,4 @@
-# MundosVirtuales-InterfacesInteligentes
+ # MundosVirtuales-InterfacesInteligentes
 ## Seminario: Mundos virtuales. Introducción a la programación de gráficos 3D.
 Integrantes del grupo:
 - Muhammad Campos Preira
@@ -15,11 +15,11 @@ Ejemplos en cada caso:
 
   + Traslaciones
 
-    - **transform.Translate(Vector3 translation)**: Esta función permite trasladar el objeto en la dirección especificada por el vector translation.
+**transform.Translate(Vector3 translation)**: Esta función permite trasladar el objeto en la dirección especificada por el vector translation.
 ```C
 transform.Translate(Vector3.forward * Time.deltaTime); // Mueve hacia adelante
 ```
-    - **transform.position**: Esta propiedad te permite acceder y modificar directamente la posición del objeto en el espacio 3D.
+**transform.position**: Esta propiedad te permite acceder y modificar directamente la posición del objeto en el espacio 3D.
 ```C
 transform.position = new Vector3(1f, 0f, 0f); // Establece la posición en (1, 0, 0)
 ```
