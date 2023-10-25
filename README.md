@@ -13,31 +13,31 @@ En Unity, las traslaciones, rotaciones y escalados de objetos se pueden realizar
 
 Ejemplos en cada caso:
 
-  + Traslaciones
+  + **Traslaciones**
 
-    - **transform.Translate(Vector3 translation)**: Esta función permite trasladar el objeto en la dirección especificada por el vector translation.
+    - transform.Translate(Vector3 translation): Esta función permite trasladar el objeto en la dirección especificada por el vector translation.
 ```C
 transform.Translate(Vector3.forward * Time.deltaTime); // Mueve hacia adelante
 ```
 +
-    - **transform.position**: Esta propiedad te permite acceder y modificar directamente la posición del objeto en el espacio 3D.
+    - transform.position: Esta propiedad te permite acceder y modificar directamente la posición del objeto en el espacio 3D.
 ```C
 transform.position = new Vector3(1f, 0f, 0f); // Establece la posición en (1, 0, 0)
 ```
-  + Rotaciones
+  + **Rotaciones**
 
-    - **transform.Rotate(Vector3 eulerAngles)**: Rota el objeto según los ángulos especificados en el vector eulerAngles.
+    - transform.Rotate(Vector3 eulerAngles): Rota el objeto según los ángulos especificados en el vector eulerAngles.
 ```C
 transform.Rotate(Vector3.up * Time.deltaTime * 30f); // Rota alrededor del eje Y
 ```
 +
-    - **transform.rotation**: Permite acceder y modificar directamente la rotación del objeto.
+    - transform.rotation: Permite acceder y modificar directamente la rotación del objeto.
 ```C
 transform.rotation = Quaternion.Euler(0f, 90f, 0f); // Establece la rotación a 90 grados alrededor del eje Y
 ```
-  + Escalados
+  + **Escalados**
 
-    - **transform.localScale**: Permite acceder y modificar directamente la escala del objeto en cada eje (X, Y, Z).
+    - transform.localScale: Permite acceder y modificar directamente la escala del objeto en cada eje (X, Y, Z).
 ```C
 transform.localScale = new Vector3(2f, 2f, 2f); // Duplica el tamaño del objeto en todo
 ```
