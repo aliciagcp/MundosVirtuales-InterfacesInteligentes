@@ -75,7 +75,7 @@ Camera.main.fieldOfView = 90f; // Establece un campo de visión de 90 grados
 10. **¿Cómo puedes obtener la matriz de transformación entre el sistema de coordenadas local y el mundial?**
 11. **¿Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista?**
 ```C
- Camera camara = Camera.main;  
+Camera camara = Camera.main;  
 // Obtiene la matriz de cambio del sistema de referencia local al sistema de referencia de vista
 Matrix4x4 matrizDeCambio = camara.worldToCameraMatrix;
 Debug.Log("Matriz de Cambio al Sistema de Referencia de Vista:\n" + matrizDeCambio);
