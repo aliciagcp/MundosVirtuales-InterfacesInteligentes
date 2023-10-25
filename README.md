@@ -51,13 +51,16 @@ transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada 
 transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
 ```
 Después de esta traslación, la posición de la cámara en el espacio será (2, 3, -8) y la cámara se rotará 30 grados alrededor del eje Y desde su posición trasladada.
+
 ![Ejercicio 2-1](ej2-2.png)
+
   + Escenario 2: Rotación primero, luego traslación
 ```C
 transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
 transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada eje)
 ```
 Después de esta rotación, la cámara se rotará 30 grados alrededor del eje Y desde su posición original en el origen (0, 1, -10) y la posición de la cámara en el espacio será (2.73, 3, -9.26), pero estará rotada 30 grados alrededor del eje Y.
+
 ![Ejercicio 2-1](ej2-1.png)
 
 
