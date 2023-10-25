@@ -15,7 +15,7 @@ Ejemplos en cada caso:
 
   + Traslaciones
 
-    -> **transform.Translate(Vector3 translation)**: Esta función permite trasladar el objeto en la dirección especificada por el vector translation.
+    - **transform.Translate(Vector3 translation)**: Esta función permite trasladar el objeto en la dirección especificada por el vector translation.
 ```C
 transform.Translate(Vector3.forward * Time.deltaTime); // Mueve hacia adelante
 ```
