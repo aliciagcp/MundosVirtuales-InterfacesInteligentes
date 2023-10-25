@@ -8,7 +8,15 @@ Integrantes del grupo:
 Se pide responder a las siguientes cuestiones y relacionar en los casos que sea posible con los contenidos que se han explicado en la sesión de mundos virtuales:
 
 1. **Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.**
-2. **Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado**
+
+En Unity, las traslaciones, rotaciones y escalados de objetos se pueden realizar mediante el uso de las funciones y propiedades proporcionadas por la clase *Transform*.
+
+Ejemplos en cada caso:
+  + Traslaciones
+  + Rotaciones
+  + Escalados
+
+3. **Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado**
 
 No se obtendría el mismo resultado, ya que las transformaciones no son conmutativas.
   + Escenario 1: Traslación primero, luego rotación
