@@ -50,17 +50,23 @@ No se obtendría el mismo resultado, ya que las transformaciones no son conmutat
 transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada eje)
 transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
 ```
-Después de esta traslación, la posición de la cámara en el espacio será (2, 2, 2) y la cámara se rotará 30 grados alrededor del eje Y desde su posición trasladada.
-
+Después de esta traslación, la posición de la cámara en el espacio será (2, 3, -8) y la cámara se rotará 30 grados alrededor del eje Y desde su posición trasladada.
+![Ejercicio 2-1](ej2-2.gif)
   + Escenario 2: Rotación primero, luego traslación
 ```C
 transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
 transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada eje)
 ```
-Después de esta rotación, la cámara se rotará 30 grados alrededor del eje Y desde su posición original en el origen (0, 0, 0) y la posición de la cámara en el espacio será (2, 2, 2), pero estará rotada 30 grados alrededor del eje Y.
+Después de esta rotación, la cámara se rotará 30 grados alrededor del eje Y desde su posición original en el origen (0, 1, -10) y la posición de la cámara en el espacio será (2.73, 3, -9.26), pero estará rotada 30 grados alrededor del eje Y.
+![Ejercicio 2-1](ej2-1.gif)
+
 
 3. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.**
+![Ejercicio 3](ej3.gif)
+
 4. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.**
+![Ejercicio 4](ej4.gif)
+
 5. **Como puedes aumentar el ángulo de la cámara. Qué efecto tiene disminuir el ángulo de la cámara.**
 
 Esto se hace a través de la propiedad *fieldOfView* de la cámara. Un campo de visión más amplio permite ver más contenido en el escenario, mientras que un campo de visión más estrecho mostrará menos contenido, pero con mayor detalle.
@@ -69,10 +75,21 @@ Camera.main.fieldOfView = 90f; // Establece un campo de visión de 90 grados
 ```
 
 6. **Es correcta la siguiente afirmación: Para realizar la proyección al espacio 2D, en el inspector de la cámara, cambiaremos el valor de projection, asignándole el valor de orthographic**
+La afirmación es correcta, pero debemos tener en cuenta varias cosas, si cambiamos ese valor de projection, perderemos información del tamaño de los objetos proyectados, si queremos conservarla, debemos mantenerla en ortográfica.
+
 7. **Especifica las rotaciones que se han indicado en los ejercicios previos con la utilidad quaternion.**
+![Ejercicio 7](ej7.gif)
+
+ 
 8. **¿Como puedes averiguar la matriz de proyección en perspectiva que se ha usado para proyectar la escena al último frame renderizado?**
+![Ejercicio 8](ej8.gif)
+
 9. **¿Como puedes averiguar la matriz de proyección en perspectiva ortográfica que se ha usado para proyectar la escena al último frame renderizado?**
+![Ejercicio 9](ej9.gif)
+
 10. **¿Cómo puedes obtener la matriz de transformación entre el sistema de coordenadas local y el mundial?**
+![Ejercicio 11](ej10.gif)
+
 11. **¿Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista?**
 ```C
 Camera camara = Camera.main;  
@@ -81,7 +98,11 @@ Matrix4x4 matrizDeCambio = camara.worldToCameraMatrix;
 Debug.Log("Matriz de Cambio al Sistema de Referencia de Vista:\n" + matrizDeCambio);
 ````
 12. **Especifica la matriz de la proyección usado en un instante de la ejecución del ejercicio 1 de la práctica 1.**
+![Ejercicio 2-1](ej12.gif)
+
 13. **Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.**
+
+
 14. **Aplica una rotación en el start de uno de los objetos de la escena y muestra la matriz de cambio al sistema de referencias mundial.**
 
 ```C
