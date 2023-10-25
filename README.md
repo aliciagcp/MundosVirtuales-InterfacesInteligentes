@@ -51,5 +51,17 @@ Camera.main.fieldOfView = 90f; // Establece un campo de visión de 90 grados
 13. **Especifica la matriz de la proyección usado en un instante de la ejecución del ejercicio 1 de la práctica 1.**
 14. **Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.**
 15. **Aplica una rotación en el start de uno de los objetos de la escena y muestra la matriz de cambio al sistema de referencias mundial.**
-16. **¿Como puedes calcular las coordenadas del sistema de referencia de un objeto con las siguientes propiedades del Transform:?: 
+
+```C
+public Vector3 rotation = new Vector3(0f, 45f, 0f);
+
+    void Start()
+    {
+        transform.Rotate(rotation); // Aplica la rotación al objeto
+        atrix4x4 matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.localScale);
+        Debug.Log("Matriz de Rotación al Sistema Mundial:\n" + matrix);
+    }
+```
+
+17. **¿Como puedes calcular las coordenadas del sistema de referencia de un objeto con las siguientes propiedades del Transform:?: 
 Position (3, 1, 1), Rotation (45, 0, 45)**
