@@ -84,3 +84,6 @@ public Vector3 rotation = new Vector3(0f, 45f, 0f);
 
 15. **¿Como puedes calcular las coordenadas del sistema de referencia de un objeto con las siguientes propiedades del Transform:?: 
 Position (3, 1, 1), Rotation (45, 0, 45)**
+```C
+Vector3 coordenadasSistemaDeReferencia = transform.rotation * transform.position;
+```
