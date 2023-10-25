@@ -5,6 +5,7 @@ Integrantes del grupo:
 - Alicia Guadalupe Cruz Pérez
 - Gabriel Jonay Vera Estévez
 
+<br/br>
 Se pide responder a las siguientes cuestiones y relacionar en los casos que sea posible con los contenidos que se han explicado en la sesión de mundos virtuales:
 
 1. **Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.**
