@@ -19,7 +19,8 @@ Ejemplos en cada caso:
 ```C
 transform.Translate(Vector3.forward * Time.deltaTime); // Mueve hacia adelante
 ```
-**transform.position**: Esta propiedad te permite acceder y modificar directamente la posición del objeto en el espacio 3D.
++
+    - **transform.position**: Esta propiedad te permite acceder y modificar directamente la posición del objeto en el espacio 3D.
 ```C
 transform.position = new Vector3(1f, 0f, 0f); // Establece la posición en (1, 0, 0)
 ```
@@ -29,7 +30,8 @@ transform.position = new Vector3(1f, 0f, 0f); // Establece la posición en (1, 0
 ```C
 transform.Rotate(Vector3.up * Time.deltaTime * 30f); // Rota alrededor del eje Y
 ```
-**transform.rotation**: Permite acceder y modificar directamente la rotación del objeto.
++
+    - **transform.rotation**: Permite acceder y modificar directamente la rotación del objeto.
 ```C
 transform.rotation = Quaternion.Euler(0f, 90f, 0f); // Establece la rotación a 90 grados alrededor del eje Y
 ```
