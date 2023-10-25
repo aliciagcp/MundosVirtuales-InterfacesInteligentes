@@ -24,6 +24,15 @@ transform.Translate(Vector3.forward * Time.deltaTime); // Mueve hacia adelante
 transform.position = new Vector3(1f, 0f, 0f); // Establece la posición en (1, 0, 0)
 ```
   + Rotaciones
+
+**transform.Rotate(Vector3 eulerAngles)**: Rota el objeto según los ángulos especificados en el vector eulerAngles.
+```C
+transform.Rotate(Vector3.up * Time.deltaTime * 30f); // Rota alrededor del eje Y
+```
+**transform.rotation**: Permite acceder y modificar directamente la rotación del objeto.
+```C
+transform.rotation = Quaternion.Euler(0f, 90f, 0f); // Establece la rotación a 90 grados alrededor del eje Y
+```
   + Escalados
 
 3. **Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30º y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado**
