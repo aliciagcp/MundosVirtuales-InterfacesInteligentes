@@ -11,16 +11,20 @@ Se pide responder a las siguientes cuestiones y relacionar en los casos que sea 
 2. **Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30ª y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado**
 No se obtendría el mismo resultado, ya que las transformaciones no son conmutativas.
 
-Escenario 1: Traslación primero, luego rotación
++ Escenario 1: Traslación primero, luego rotación
 ```C
 transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada eje)
 transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
 ```
-Escenario 1: Rotación primero, luego traslación
+Después de esta traslación, la posición de la cámara en el espacio será (2, 2, 2) y la cámara se rotará 30 grados alrededor del eje Y desde su posición trasladada.
+
++ Escenario 2: Rotación primero, luego traslación
 ```C
 transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
 transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada eje)
 ```
+Después de esta rotación, la cámara se rotará 30 grados alrededor del eje Y desde su posición original en el origen (0, 0, 0) y la posición de la cámara en el espacio será (2, 2, 2), pero estará rotada 30 grados alrededor del eje Y.
+
 4. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.**
 5. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.**
 6. **Como puedes aumentar el ángulo de la cámara. Qué efecto tiene disminuir el ángulo de la cámara.**
