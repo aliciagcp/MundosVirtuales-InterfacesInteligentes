@@ -9,16 +9,16 @@ Se pide responder a las siguientes cuestiones y relacionar en los casos que sea 
 
 1. **Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.**
 2. **Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30ª y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado**
-No se obtendría el mismo resultado, ya que las transformaciones no son conmutativas.
 
-+ Escenario 1: Traslación primero, luego rotación
+No se obtendría el mismo resultado, ya que las transformaciones no son conmutativas.
+  + Escenario 1: Traslación primero, luego rotación
 ```C
 transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada eje)
 transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
 ```
 Después de esta traslación, la posición de la cámara en el espacio será (2, 2, 2) y la cámara se rotará 30 grados alrededor del eje Y desde su posición trasladada.
 
-+ Escenario 2: Rotación primero, luego traslación
+  + Escenario 2: Rotación primero, luego traslación
 ```C
 transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
 transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada eje)
