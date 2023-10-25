@@ -62,9 +62,11 @@ Después de esta rotación, la cámara se rotará 30 grados alrededor del eje Y 
 
 
 3. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.**
+
 ![Ejercicio 3](ej3.png)
 
 4. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.**
+
 ![Ejercicio 4](ej4.png)
 
 5. **Como puedes aumentar el ángulo de la cámara. Qué efecto tiene disminuir el ángulo de la cámara.**
@@ -79,16 +81,19 @@ Camera.main.fieldOfView = 90f; // Establece un campo de visión de 90 grados
 La afirmación es correcta, pero debemos tener en cuenta varias cosas, si cambiamos ese valor de *projection*, perderemos información del tamaño de los objetos proyectados, si queremos conservarla, debemos mantenerla en ortográfica.
 
 7. **Especifica las rotaciones que se han indicado en los ejercicios previos con la utilidad quaternion.**
+
 ![Ejercicio 7](ej7.png)
 
- 
 8. **¿Como puedes averiguar la matriz de proyección en perspectiva que se ha usado para proyectar la escena al último frame renderizado?**
+
 ![Ejercicio 8](ej8.png)
 
 9. **¿Como puedes averiguar la matriz de proyección en perspectiva ortográfica que se ha usado para proyectar la escena al último frame renderizado?**
+
 ![Ejercicio 9](ej9.png)
 
 10. **¿Cómo puedes obtener la matriz de transformación entre el sistema de coordenadas local y el mundial?**
+
 ![Ejercicio 11](ej10.png)
 
 11. **¿Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista?**
@@ -99,6 +104,7 @@ Matrix4x4 matrizDeCambio = camara.worldToCameraMatrix;
 Debug.Log("Matriz de Cambio al Sistema de Referencia de Vista:\n" + matrizDeCambio);
 ````
 12. **Especifica la matriz de la proyección usado en un instante de la ejecución del ejercicio 1 de la práctica 1.**
+
 ![Ejercicio 2-1](ej12.png)
 
 13. **Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.**
