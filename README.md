@@ -76,7 +76,7 @@ Camera.main.fieldOfView = 90f; // Establece un campo de visión de 90 grados
 
 6. **Es correcta la siguiente afirmación: Para realizar la proyección al espacio 2D, en el inspector de la cámara, cambiaremos el valor de projection, asignándole el valor de orthographic**
 
-La afirmación es correcta, pero debemos tener en cuenta varias cosas, si cambiamos ese valor de projection, perderemos información del tamaño de los objetos proyectados, si queremos conservarla, debemos mantenerla en ortográfica.
+La afirmación es correcta, pero debemos tener en cuenta varias cosas, si cambiamos ese valor de *projection*, perderemos información del tamaño de los objetos proyectados, si queremos conservarla, debemos mantenerla en ortográfica.
 
 7. **Especifica las rotaciones que se han indicado en los ejercicios previos con la utilidad quaternion.**
 ![Ejercicio 7](ej7.png)
