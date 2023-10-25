@@ -1,4 +1,5 @@
 # MundosVirtuales-InterfacesInteligentes
+## Seminario: Mundos virtuales. Introducción a la programación de gráficos 3D.
 Integrantes del grupo:
 - Muhammad Campos Preira
 - Alicia Guadalupe Cruz Pérez
