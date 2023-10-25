@@ -13,7 +13,13 @@ No se obtendría el mismo resultado, ya que las transformaciones no son conmutat
 
 Escenario 1: Traslación primero, luego rotación
 ```C
-transform.Translate(new Vector3(2f, 2f, 2f));
+transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada eje)
+transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
+```
+Escenario 1: Rotación primero, luego traslación
+```C
+transform.Rotate(new Vector3(0f, 30f, 0f));    // Rotación (30 grados alrededor del eje Y)
+transform.Translate(new Vector3(2f, 2f, 2f));  // Traslación (2 metros en cada eje)
 ```
 4. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.**
 5. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.**
