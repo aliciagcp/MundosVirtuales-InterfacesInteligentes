@@ -77,7 +77,7 @@ public Vector3 rotation = new Vector3(0f, 45f, 0f);
     void Start()
     {
         transform.Rotate(rotation); // Aplica la rotación al objeto
-        atrix4x4 matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.localScale);
+        Matrix4x4 matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.localScale);
         Debug.Log("Matriz de Rotación al Sistema Mundial:\n" + matrix);
     }
 ```
