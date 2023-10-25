@@ -12,7 +12,9 @@ Se pide responder a las siguientes cuestiones y relacionar en los casos que sea 
 En Unity, las traslaciones, rotaciones y escalados de objetos se pueden realizar mediante el uso de las funciones y propiedades proporcionadas por la clase *Transform*.
 
 Ejemplos en cada caso:
+
   + Traslaciones
+
 **transform.Translate(Vector3 translation)**: Esta función permite trasladar el objeto en la dirección especificada por el vector translation.
 ```C
 transform.Translate(Vector3.forward * Time.deltaTime); // Mueve hacia adelante
