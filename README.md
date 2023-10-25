@@ -73,7 +73,13 @@ Camera.main.fieldOfView = 90f; // Establece un campo de visión de 90 grados
 8. **¿Como puedes averiguar la matriz de proyección en perspectiva que se ha usado para proyectar la escena al último frame renderizado?**
 9. **¿Como puedes averiguar la matriz de proyección en perspectiva ortográfica que se ha usado para proyectar la escena al último frame renderizado?**
 10. **¿Cómo puedes obtener la matriz de transformación entre el sistema de coordenadas local y el mundial?**
-11. **Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista**
+11. **¿Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista?**
+```C
+ Camera camara = Camera.main;  
+// Obtiene la matriz de cambio del sistema de referencia local al sistema de referencia de vista
+Matrix4x4 matrizDeCambio = camara.worldToCameraMatrix;
+Debug.Log("Matriz de Cambio al Sistema de Referencia de Vista:\n" + matrizDeCambio);
+````
 12. **Especifica la matriz de la proyección usado en un instante de la ejecución del ejercicio 1 de la práctica 1.**
 13. **Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.**
 14. **Aplica una rotación en el start de uno de los objetos de la escena y muestra la matriz de cambio al sistema de referencias mundial.**
