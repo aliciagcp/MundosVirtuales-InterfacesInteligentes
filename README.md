@@ -112,6 +112,7 @@ Debug.Log("Matriz de Cambio al Sistema de Referencia de Vista:\n" + matrizDeCamb
 
 13. **Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.**
 
+![Ejercicio 13](ej13.png)
 
 14. **Aplica una rotación en el start de uno de los objetos de la escena y muestra la matriz de cambio al sistema de referencias mundial.**
 
